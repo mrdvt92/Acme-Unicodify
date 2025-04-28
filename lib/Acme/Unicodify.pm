@@ -21,8 +21,8 @@ use File::Slurper 0.008 qw(read_text write_text);
   $foo = $translate->to_unicode('Hello, World');
   $bar = $translate->back_to_ascii($unified_string);
 
-  file_to_unicode('/tmp/infile', '/tmp/outfile');
-  file_back_to_ascii('/tmp/infile', '/tmp/outfile');
+  $translate->file_to_unicode('/tmp/infile', '/tmp/outfile');
+  $translate->file_back_to_ascii('/tmp/infile', '/tmp/outfile');
 
 =head1 DESCRIPTION
 
